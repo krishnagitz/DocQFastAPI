@@ -49,28 +49,10 @@ pdf_qa = ConversationalRetrievalChain.from_llm(
     verbose=False
 )
 
-yellow = "\033[0;33m"
-green = "\033[0;32m"
-white = "\033[0;39m"
-
 @app.get("/")
 async def root():
     return {"message": "Hello, hackathon team!"}
 chat_history = []
-# print(f"{yellow}---------------------------------------------------------------------------------")
-# print('Welcome to the DocBot. You are now ready to start interacting with your documents')
-# print('---------------------------------------------------------------------------------')
-# while True:
-#     query = input(f"{green}Prompt: ")
-#     if query == "exit" or query == "quit" or query == "q" or query == "f":
-#         print('Exiting')
-#         sys.exit()
-#     if query == '':
-#         continue
-#     result = pdf_qa(
-#         {"question": query, "chat_history": chat_history})
-#     print(f"{white}Answer: " + result["answer"])
-#     chat_history.append((query, result["answer"]))
 
 # Define an endpoint to receive questions and return answers
 MAX_TOKENS = 4097
