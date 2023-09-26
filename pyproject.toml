@@ -11,8 +11,9 @@ requests = "^2.31.0"
 pandas = "^2.1.0"
 tiktoken = "^0.5.0"
 scipy = "^1.11.2"
-
-[tool.poetry.group.dev.dependencies]
+fastapi = ">=0.95.2,<0.100.0"
+chromadb = "^0.4.12"
+docx2txt = "^0.8"
 
 [build-system]
 requires = ["poetry-core"]
