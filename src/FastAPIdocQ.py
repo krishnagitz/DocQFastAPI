@@ -10,14 +10,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.text_splitter import CharacterTextSplitter
 from fastapi import FastAPI, HTTPException
-import ast  # for converting embeddings saved as strings back to arrays
-import openai  # for calling the OpenAI API
-import pandas as pd  # for storing text and embeddings data
-import tiktoken  # for counting tokens
-from scipy import spatial  # for calculating vector similarities for search
-import certifi
-certifi.where()
-r"C:\Users\WF941RK\Documents\GitHub\DocQFastAPI\src\sni.cloudflaressl.crt"
 
 
 load_dotenv('.env')

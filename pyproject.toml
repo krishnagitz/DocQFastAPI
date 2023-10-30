@@ -16,6 +16,7 @@ chromadb = "^0.4.12"
 docx2txt = "^0.8"
 langchain = "^0.0.325"
 pypdf = "^3.16.4"
+pip-system-certs = "^4.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.26.0"
